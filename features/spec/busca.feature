@@ -16,3 +16,5 @@ Funcionalidade: Buscas no Fake Ecommerce
   # Completar o cenário abaixo
   @busca_sem_resultados
   Cenário: Busca sem resultados
+    Quando o usuário pesquisa pelo produto 'relogio'
+    Então é retornado o aviso 'No results were found for your search "relogio"'

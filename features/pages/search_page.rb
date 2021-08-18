@@ -5,5 +5,6 @@ module Pages
     set_url '/index.php'
 
     sections :products, Sections::Product, '.product-container'
+    element  :alert_message_no_results, '.alert-warning'
   end
 end

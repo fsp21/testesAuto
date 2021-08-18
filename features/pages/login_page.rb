@@ -10,5 +10,6 @@ module Pages
     element  :link_forgot_password, '.lost_password'
     element  :btn_sign_in, '#SubmitLogin'
     element  :alert_message_authentication_failed, '.alert-danger'
+    element :page_heading, '.page-heading'
   end
 end
