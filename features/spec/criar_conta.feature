@@ -1,6 +1,6 @@
 # language: pt
 
-Funcionalidade: Login no Ecommerce Fake
+Funcionalidade: Criar conta no Ecommerce Fake
   Como um cliente do site FakeEcommerce
   Gostaria criar uma conta
   Para salvar meus dados

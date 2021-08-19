@@ -3,7 +3,7 @@ Dado("que esteja na página do login") do
     end
   
   Quando("digita o e-mail e clica criar conta") do
-    @login_page.input_create_account_email.set('zoaozfisdna@testador.com.br')
+    @login_page.input_create_account_email.set('contateste100@testador.com.br')
     @login_page.btn_create.click
     end
   

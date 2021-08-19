@@ -5,6 +5,8 @@ Before do
   @login_page = Pages::LoginPage.new
   @create_account_page = Pages::CreateAccountPage.new
   @my_account_page = Pages::MyAccountPage.new
+  @produto_um_page = Pages::AddToCartPage.new
+  @carrinho_page = Pages::CartPage.new
 end
 
 AfterStep do

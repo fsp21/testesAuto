@@ -9,6 +9,8 @@ module Pages
     element  :button_search, '.button-search'
     element  :input_newsletter_footer_email, '.newsletter-input'
     element  :btn_newsletter_footer_register, '[name="submitNewsletter"]'
+    element  :home_featured, 'img[src="http://automationpractice.com/img/p/1/1-home_default.jpg"]'
+    element  :btn_shopping_cart, '.shopping_cart'
 
     def search(query)
       input_search_form.set(query)
