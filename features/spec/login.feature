@@ -14,5 +14,7 @@ Funcionalidade: Login no Ecommerce Fake
     Então é redirecionado para sua conta
 
 
-  # Completar o cenário abaixo
+  @login_falho
   Cenário: Login com falha
+    Quando preencher os campos incorretamente
+    Então é exibida a mensagem 'Authentication failed'

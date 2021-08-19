@@ -13,7 +13,6 @@ Funcionalidade: Buscas no Fake Ecommerce
     Quando buscar pelo produto 'shirt'
     Então devem ser retornados produtos
 
-  # Completar o cenário abaixo
   @busca_sem_resultados
   Cenário: Busca sem resultados
     Quando o usuário pesquisa pelo produto 'relogio'
