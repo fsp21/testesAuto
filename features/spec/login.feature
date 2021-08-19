@@ -10,11 +10,11 @@ Funcionalidade: Login no Ecommerce Fake
 
   @realizar_login
   Cenário: Realizar login
-    Quando preencher os campos e-mail e senha
+    Quando preenche os campos e-mail e senha
     Então é redirecionado para sua conta
 
 
   @login_falho
   Cenário: Login com falha
-    Quando preencher os campos incorretamente
+    Quando preenche os campos incorretamente
     Então é exibida a mensagem 'Authentication failed'
