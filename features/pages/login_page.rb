@@ -9,6 +9,7 @@ module Pages
     element  :input_login_password, '#passwd'
     element  :link_forgot_password, '.lost_password'
     element  :btn_sign_in, '#SubmitLogin'
+    element  :btn_create, '#SubmitCreate'
     element  :alert_message_authentication_failed, '.alert-danger'
     element  :page_heading, '.page-heading'
   end

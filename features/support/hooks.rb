@@ -3,6 +3,8 @@ Before do
   @home_page = Pages::HomePage.new
   @search_page = Pages::SearchPage.new
   @login_page = Pages::LoginPage.new
+  @create_account_page = Pages::CreateAccountPage.new
+  @my_account_page = Pages::MyAccountPage.new
 end
 
 AfterStep do
