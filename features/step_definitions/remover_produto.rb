@@ -9,6 +9,6 @@ Então("remove do carrinho") do
     @produto_um_page.btn_carrinho.click
     expect(@carrinho_page.url).to have_content 'controller=order'
     @carrinho_page.btn_remover.click
-    sleep(10)
+    sleep(5)
     expect(@carrinho_page.empty_warning).to have_content 'Your shopping cart is empty'
 end

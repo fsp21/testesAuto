@@ -5,7 +5,7 @@ Quando("clica num produto") do
 
 E("edita as necessidades") do
     @produto_um_page.adicionar_ao_carrinho(2, 'L')
-    @produto_um_page.cor_azul.click
+    @produto_um_page.escolher_cor('laranja')
     end
 
 
