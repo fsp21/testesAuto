@@ -3,13 +3,12 @@ Dado("que esteja na página do login") do
 end
 
 Quando("o usuário digitar o e-mail e clicar em criar conta") do
-  @login_page.input_create_account_email.set('contateste119@testador.com.br')
+  @login_page.input_create_account_email.set('contateste120@testador.com.br')
   @login_page.btn_create.click
 end
 
 Então("é redirecionado para a criação de conta") do
   expect(@create_account_page.url).to have_content 'account-creation'
-  sleep(10)
 end
 
 E("preenche o formulário e envia") do
