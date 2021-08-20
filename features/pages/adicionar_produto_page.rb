@@ -9,5 +9,9 @@ module Pages
       element  :modal_adicionado, '#layer_cart'
       element  :btn_carrinho, '[title="View my shopping cart"]'
 
+      def adicionar_ao_carrinho(unidades, tamanho)
+        adicionar_unidade.click unidades
+        escolher_tamanho.select tamanho
+      end
     end
   end

@@ -4,9 +4,7 @@ Quando("clica num produto") do
   end
 
 E("edita as necessidades") do
-    @produto_um_page.adicionar_unidade.click
-    @produto_um_page.adicionar_unidade.click
-    @produto_um_page.escolher_tamanho.select('L')
+    @produto_um_page.adicionar_ao_carrinho(2, 'L')
     @produto_um_page.cor_azul.click
     end
 
