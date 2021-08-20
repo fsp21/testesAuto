@@ -3,7 +3,7 @@ Dado("que esteja na página do login") do
     end
   
   Quando("digita o e-mail e clica criar conta") do
-    @login_page.input_create_account_email.set('contateste100@testador.com.br')
+    @login_page.input_create_account_email.set('contateste104@testador.com.br')
     @login_page.btn_create.click
     end
   
@@ -14,19 +14,10 @@ Dado("que esteja na página do login") do
 
   Então("preenche o formulário e envia") do
     @create_account_page.gender_radio_male.click
-    @create_account_page.first_name_personal_info.set('João')
-    @create_account_page.last_name_personal_info.set('Testador')
-    @create_account_page.password_personal_info.set('abc123!')
-    @create_account_page.day_of_birth.select("31")
-    @create_account_page.month_of_birth.select("December")
-    @create_account_page.year_of_birth.select("1990")
+    @create_account_page.personal_information('Joao', 'SobrenomePadrao', 'abc123!')
+    @create_account_page.date_of_birth('31', 'December', '1990')
     @create_account_page.company_address.set('Compasso UOL')
-    @create_account_page.first_address.set('Rua de asfalto, número inteiro e apartamento centena')
-    @create_account_page.second_address.set('Predio de cor, com janelas e portas')
-    @create_account_page.city_address.set('Salvador')
-    @create_account_page.state_address.select('Alaska')
-    @create_account_page.zip_code.set('12345')
-    @create_account_page.country.select('United States')
+    @create_account_page.address('Rua de asfalto, número inteiro e apartamento centena', 'Predio de cor, com janelas e portas', 'Salvador', 'Alaska', '12345', 'United States')
     @create_account_page.additional_information.set('Não tenho nada a adicionar')
     @create_account_page.home_phone.set('71995682207')
     @create_account_page.mobile_phone.set('71987440763')

@@ -25,5 +25,27 @@ module Pages
       element  :mobile_phone, '#phone_mobile'
       element  :nome_do_endereco, '#alias'
       element  :btn_register, '#submitAccount'
+    
+      def personal_information(nome, sobrenome, senha)
+        first_name_personal_info.set nome
+        last_name_personal_info.set sobrenome
+        password_personal_info.set senha
+      end
+
+      def date_of_birth(dia, mes, ano)
+        day_of_birth.select dia
+        month_of_birth.select mes
+        year_of_birth.select ano
+      end
+
+      def address(linha1, linha2, cidade, estado, zipcode, pais)
+        first_address.set linha1
+        second_address.set linha2
+        city_address.set cidade
+        state_address.select estado
+        zip_code.set zipcode
+        country.select pais
+      end
+
     end
   end
