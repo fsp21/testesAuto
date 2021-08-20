@@ -10,6 +10,7 @@ Funcionalidade: Adicionar um produto ao carrinho
 
   @adicionar_produto
   Cenário: Adicionar produto ao carrinho
-    Quando clica num produto
-    E edita as necessidades
-    Então adiciona ao carrinho
+    Quando o usuário clicar num produto
+    E editar as necessidades
+    E adicionar ao carrinho
+    Então deve receber a mensagem de confirmação

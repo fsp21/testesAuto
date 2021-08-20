@@ -9,6 +9,7 @@ Funcionalidade: Remover produto do carrinho
 
   @remover_produto
   Cenário: Remover produto do carrinho
-    Quando clica num produto
-    E adiciona no carrinho
-    Então remove do carrinho
+    Quando o usuário clicar num produto
+    E adicionar no carrinho
+    E remover do carrinho
+    Então deve receber a mensagem 'Your shopping cart is empty'

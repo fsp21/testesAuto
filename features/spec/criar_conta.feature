@@ -10,6 +10,7 @@ Funcionalidade: Criar conta no Ecommerce Fake
 
   @criar_conta
   Cenário: Criar conta
-    Quando digita o e-mail e clica criar conta
-    E é redirecionado para a criação de conta
-    Então preenche o formulário e envia
+    Quando o usuário digitar o e-mail e clicar em criar conta
+    Então é redirecionado para a criação de conta
+    E preenche o formulário e envia
+    Então deve ser redirecionado para a página de sua conta

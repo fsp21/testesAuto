@@ -2,17 +2,17 @@ Dado("que esteja na página do login") do
   @login_page.load
 end
 
-Quando("digita o e-mail e clica criar conta") do
-  @login_page.input_create_account_email.set('contateste104@testador.com.br')
+Quando("o usuário digitar o e-mail e clicar em criar conta") do
+  @login_page.input_create_account_email.set('contateste119@testador.com.br')
   @login_page.btn_create.click
 end
 
-E("é redirecionado para a criação de conta") do
+Então("é redirecionado para a criação de conta") do
   expect(@create_account_page.url).to have_content 'account-creation'
   sleep(10)
 end
 
-Então("preenche o formulário e envia") do
+E("preenche o formulário e envia") do
   @create_account_page.gender_radio_male.click
   @create_account_page.personal_information('Joao', 'SobrenomePadrao', 'abc123!')
   @create_account_page.date_of_birth('31', 'December', '1990')
@@ -23,5 +23,8 @@ Então("preenche o formulário e envia") do
   @create_account_page.mobile_phone.set('71987440763')
   @create_account_page.nome_do_endereco.set('Endereço principal')
   @create_account_page.btn_register.click
+end
+
+Então("deve ser redirecionado para a página de sua conta") do
   expect(@my_account_page.url).to have_content 'my-account'
 end
