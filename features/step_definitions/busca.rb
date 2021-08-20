@@ -16,6 +16,6 @@ Quando("o usuário pesquisa pelo produto {string}") do |query|
   @home_page.search(query)
 end
 
-Então("é retornado o aviso {string}") do |string|
+Então("é retornado o aviso {string}") do
   expect(@search_page.alert_message_no_results).to have_content 'No results were found for your search'
-end 
+end

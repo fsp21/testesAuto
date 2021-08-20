@@ -1,7 +1,6 @@
 module Pages
   class HomePage < SitePrism::Page
     set_url '/index.php'
-
     element  :logo, '.logo'
     element  :btn_contact_us, '#contact-link'
     element  :btn_go_to_sign_in, '.login'
@@ -9,7 +8,7 @@ module Pages
     element  :button_search, '.button-search'
     element  :input_newsletter_footer_email, '.newsletter-input'
     element  :btn_newsletter_footer_register, '[name="submitNewsletter"]'
-    element  :home_featured, 'img[src="http://automationpractice.com/img/p/1/1-home_default.jpg"]'
+    element  :home_featured, 'img[title="Faded Short Sleeve T-shirts"]'
     element  :btn_shopping_cart, '.shopping_cart'
 
     def search(query)
