@@ -3,7 +3,7 @@ Dado("que esteja na página do login") do
 end
 
 Quando("o usuário digitar o e-mail e clicar em criar conta") do
-  @login_page.input_create_account_email.set('contateste120@testador.com.br')
+  @login_page.input_create_account_email.set(Faker::Internet.free_email)
   @login_page.btn_create.click
 end
 
@@ -13,7 +13,7 @@ end
 
 E("preenche o formulário e envia") do
   @create_account_page.gender_radio_male.click
-  @create_account_page.personal_information('Joao', 'SobrenomePadrao', 'abc123!')
+  @create_account_page.personal_information(Faker::Internet.username(separators: ' '), Faker::Internet.username(separators: ' '), Faker::Internet.password)
   @create_account_page.date_of_birth('31', 'December', '1990')
   @create_account_page.company_address.set('Compasso UOL')
   @create_account_page.address('Rua de asfalto, número inteiro e apartamento centena', 'Predio de cor, com janelas e portas', 'Salvador', 'Alaska', '12345', 'United States')

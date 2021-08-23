@@ -4,6 +4,7 @@ require 'capybara/cucumber'
 require 'site_prism'
 require 'cucumber'
 require 'rspec'
+require 'faker'
 
 Capybara.configure do |config|
   config.default_driver = :selenium_chrome
