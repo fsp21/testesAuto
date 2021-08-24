@@ -1,13 +1,13 @@
 E("adicionar no carrinho") do
-  @produto_um_page.btn_adicionar.click
-  expect(@produto_um_page.modal_adicionado).to have_content 'Product successfully added to your shopping cart'
-  @carrinho_page.btn_continue_shopping.click
+  @product_page.btn_add.click
+  expect(@product_page.modal_cart).to have_content 'Product successfully added to your shopping cart'
+  @carrinho_page.modal_cart.btn_continue_shopping.click
 end
 
 E("remover do carrinho") do
-  @produto_um_page.btn_carrinho.click
+  @home_page.header.btn_carrinho.click
   expect(@carrinho_page.url).to have_content 'controller=order'
-  @carrinho_page.btn_remover.click
+  @carrinho_page.btn_remove.click
 end
 
 Então('deve receber a mensagem {string}') do |string|
