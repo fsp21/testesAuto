@@ -1,5 +1,4 @@
 require_relative 'sections/header.rb'
-require_relative 'sections/quickview.rb'
 
 module Pages
   class HomePage < SitePrism::Page
@@ -12,15 +11,6 @@ module Pages
     element  :home_featured, 'img[title="Faded Short Sleeve T-shirts"]'
     element  :btn_shopping_cart, '.shopping_cart'
     section  :header, Sections::Header, '.header-container'
-    section  :quickview, Sections::QuickView, '#product'
-    element  :btn_quickview, '#homefeatured a.quick-view[href*="1"]'
-    element  :first_product, '#homefeatured > li.ajax_block_product.col-xs-12.col-sm-4.col-md-3.first-in-line.first-item-of-tablet-line.first-item-of-mobile-line > div > div.left-block'
-
-    def move_to_element
-      driver = Selenium::WebDriver.for :chrome
-      element = driver.find_element(first_product)
-      driver.action.move_to(element).perform
-    end
 
     def search(query)
       header.input_search_form.set(query)
