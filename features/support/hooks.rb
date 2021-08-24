@@ -5,7 +5,7 @@ Before do
   @login_page = Pages::LoginPage.new
   @create_account_page = Pages::CreateAccountPage.new
   @my_account_page = Pages::MyAccountPage.new
-  @product_page = Pages::AddToCartPage.new
+  @product_page = Pages::ProductPage.new
   @carrinho_page = Pages::CartPage.new
 end
 

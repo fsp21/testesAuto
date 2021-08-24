@@ -16,3 +16,9 @@ Então("deve receber a mensagem de confirmação") do
   @product_page.btn_add.click
   expect(@product_page.modal_cart).to have_content 'Product successfully added to your shopping cart'
 end
+
+Quando("o usuário clicar no quickview de um produto") do
+  @home_page.move_to_element
+  @home_page.btn_quickview.click
+  expect(@home_page.quickview).to be_visible 'product=1'
+end
